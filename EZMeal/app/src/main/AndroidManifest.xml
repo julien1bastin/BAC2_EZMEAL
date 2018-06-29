@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.lsinf1225.julien.ezmeal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- ceci est un commentaire en XML -->
+
+        <!--activité de départ de l'application -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Chaque nouvelle activité doit être rajoutée ici-->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.MenuActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.LoginActivity"/>
+        <!-- activité parent, est utilisé lorsque l'on utilise la flèche de retour
+            en arrière dans la bar d'activité si l'activité mère
+            n'est pas indiquée dans la classe de l'activité-->
+
+        <activity
+            android:name=".activities.ProfilActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.MenuActivity"/>
+
+        <activity
+            android:name=".activities.ListRecipeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activities.RecipeActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.ListRecipeActivity"/>
+
+        <activity android:name=".activities.SearchActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.MenuActivity"/>
+
+        <activity
+            android:name=".activities.BrowseActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.SearchActivity"/>
+    </application>
+
+    <!--autorise le lancement de l'application de prise de photo de l'appareil-->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

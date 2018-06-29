@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nestedScrollViewMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".activities.MenuActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            style="@android:style/Widget.ProgressBar.Small"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/hint_top_week"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageTopWeek"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textTopWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="35dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageTopWeek2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textTopWeek2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="35dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageTopWeek3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textTopWeek3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/hint_top"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageTop"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="35dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageTop2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textTop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="35dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageTop3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textTop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/hint_last_recettes"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageLast"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textLast1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="35dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageLast2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textLast2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="90dp"
+                android:layout_width="75dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="35dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/imageLast3"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/meal_filled"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textLast3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/allRecipe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/hint_all_recipe"
+            android:textSize="16sp" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>
